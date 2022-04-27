@@ -1,4 +1,6 @@
-/* Base Styles */
+/*------Base Styles------*/
+
+
 
 * {
     box-sizing: border-box;
@@ -7,6 +9,7 @@
 h1 {
     background-color: rgb(0, 84, 218);
     color: white;
+    font-size: 1.5rem;
     margin-top: 0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -14,6 +17,9 @@ h1 {
 }
 
 #newsletter_signup {
+    padding-bottom: 1rem;
+    margin-bottom: .3rem;
+    border-bottom: 4px solid black;
     text-align: center;
 }
 
@@ -32,28 +38,104 @@ legend {
     font-size: 1.5rem;
 }
 
-fieldset {
+/*form {
+    border: none;
+}*/
+
+.main_container {
+    padding-top: 1rem;
+    border-top: 2px solid black;
+}
+
+.flex_fieldset1, .flex_fieldset2 {
     padding-left: 0;
     padding-right: 0;
-    /*border: none;*/
 }
 
-#name, #email, #phone, #address, #city, #state, #zip, #topic {
+.flex_fieldset1 {
+    border-bottom: 2px solid black;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.flex_fieldset2 {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+
+#name, #email, #phone, #address, #city, #state, #zip {
     background-color: rgb(231, 230, 230);
+    line-height: 2rem;
+    border: none;
+    border-radius: 4px;
 }
 
-#signup_button {
+#topic {
+    background-color: rgb(231, 230, 230);
+    line-height: 3rem;
+    border: none;
+    border-radius: 4px;
+}
+
+#zip {
+    width: 50%;
+}
+
+.flex_fieldset1 input {
+    margin-bottom: .75rem;
+}
+
+.flex_fieldset1 select {
+    margin-bottom: .75rem;
+}
+
+.flex_fieldset1 label {
+    margin-bottom: .25rem;
+}
+
+/*label[class="newsletter_label"] {
+    margin-bottom: 1rem;
+}*/
+
+.signup_button {
     background-color: rgb(0, 166, 255);
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
 }
 
-.main-container {
+footer {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+/*------FlexBox------*/ 
+
+
+
+.flex_fieldset1 {
     display: flex;
     flex-direction: column;
 }
 
-/* Media Queries */
+.signup_button, .footer_class {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*------Media Queries------*/
 
 @media (min-width: 768px) {
-    
+    .main_container {
+        display: flex;
+        justify-content: center;
+    }
 }
