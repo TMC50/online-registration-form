@@ -14,64 +14,66 @@
 <body>
     <h1>THE CODE REVIEW</h1>
 
-    <div id="newsletter_signup">
-        <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
-    </div>
+    <div class="wrapper">
+        <div class="newsletter_signup">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
 
-    <div class="main_container">
-        <form action="index.html" method="post">
-            <fieldset class="flex_fieldset1">
-                <legend>Contact Information</legend>
+        <div class="form_container">
+            <form action="index.html" method="post">
+                <fieldset class="flex_fieldset1">
+                    <legend>Contact Information</legend>
 
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="user_name" placeholder="Required">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required">
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="user_email" placeholder="Required">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="user_email" placeholder="Required">
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="user_phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="user_phone">
 
-                <label for="address">Street Address</label>
-                <input type="text" id="address" name="user_address">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
 
-                <label for="city">City</label>
-                <input type="text" id="city" name="user_city">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="user_city">
 
-                <label for="state">State</label>
-                <select id="state" name="user_state">
-                    <option value="Alabama">Alabama</option>
-                    <option value="Alaska">Alaska</option>
-                    <option value="Arizona">Arizona</option>
-                    <option value="Arkansas">Arkansas</option>
-                    <option value="California">California</option>
-                </select>
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                        <option value="Alabama">Alabama</option>
+                        <option value="Alaska">Alaska</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Arkansas">Arkansas</option>
+                        <option value="California">California</option>
+                    </select>
 
-                <label for="zip">Zip Code</label>
-                <input type="text" id="zip" name="user_zip">
-            </fieldset>
+                    <label for="zip">Zip Code</label>
+                    <input type="text" id="zip" name="user_zip">
+                </fieldset>
 
-            <fieldset class="flex_fieldset2">
-                <legend class="legend_newsletter">Newsletter</legend>
+                <fieldset class="flex_fieldset2">
+                    <legend class="legend_newsletter">Newsletter</legend>
 
-                <label class="newsletter_label">Select the newsletters you would like to receive:</label><br>
-                <input type="checkbox" id="html_newsletter" value="html_news" name="user_newsletter"><label for="html_newsletter">HTML News</label><br>
-                <input type="checkbox" id="css_newsletter" value="css_news" name="user_newsletter"><label for="css_newsletter">CSS News</label><br>
-                <input type="checkbox" id="javascript_newsletter" value="javascript_news" name="user_newsletter"><label for="javascript_newsletter">Javascript News</label><br>
+                    <label class="newsletter_label">Select the newsletters you would like to receive:</label><br>
+                    <input type="checkbox" id="html_newsletter" value="html_news" name="user_newsletter"><label for="html_newsletter">HTML News</label><br>
+                    <input type="checkbox" id="css_newsletter" value="css_news" name="user_newsletter"><label for="css_newsletter">CSS News</label><br>
+                    <input type="checkbox" id="javascript_newsletter" value="javascript_news" name="user_newsletter"><label for="javascript_newsletter">Javascript News</label><br>
 
-                <label class="newsletter_label">Newsletter format:</label><br>
-                <input type="radio" id="html_format" value="html" name="user_format"><label for="html_format">HTML</label><br>
-                <input type="radio" id="plain_text_format" value="plain_text" name="user_format"><label for="plain_text_format">Plain Text</label><br>
+                    <label class="newsletter_label">Newsletter format:</label><br>
+                    <input type="radio" id="html_format" value="html" name="user_format"><label for="html_format">HTML</label><br>
+                    <input type="radio" id="plain_text_format" value="plain_text" name="user_format"><label for="plain_text_format">Plain Text</label><br>
 
-                <label class="newsletter_label" for="topic">Other topics you'd like to hear about:</label><br>
-                <textarea id="topic" name="user_topic"></textarea>
-            </fieldset>
-            
-            <div class="signup_button">
-                <button type="submit">Sign Up</button>
-            </div>
-        </form>
+                    <label class="newsletter_label" for="topic">Other topics you'd like to hear about:</label><br>
+                    <textarea id="topic" name="user_topic"></textarea>
+                </fieldset>
+                
+                <div class="signup_button">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <footer class="footer_class">

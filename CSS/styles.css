@@ -11,21 +11,10 @@ h1 {
     color: white;
     font-size: 1.5rem;
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     text-align: center;
-}
-
-#newsletter_signup {
-    padding-bottom: 1rem;
-    margin-bottom: .3rem;
-    border-bottom: 4px solid black;
-    text-align: center;
-}
-
-div {
-    margin-left: 1rem;
-    margin-right: 1rem;
 }
 
 body {
@@ -33,41 +22,62 @@ body {
     font-weight: 300;
 }
 
+div {
+    max-width: 600px;
+}
+
+.newsletter_signup {
+    padding-right: .5rem;
+    padding-bottom: 1.5rem;
+    padding-left: .5rem;
+    margin: 0 1rem;
+    text-align: center;
+    border-bottom: 4px solid black;
+}
+
+.form_container {
+    padding-top: 1.5rem;
+    margin: .3rem 1rem 0 1rem;
+    border-top: 2px solid black;
+}
+
 legend {
     font-weight: bold;
     font-size: 1.5rem;
 }
 
-/*form {
-    border: none;
-}*/
-
-.main_container {
-    padding-top: 1rem;
-    border-top: 2px solid black;
-}
 
 .flex_fieldset1, .flex_fieldset2 {
     padding-left: 0;
     padding-right: 0;
+    border-left: none;
+    border-right: none;
 }
 
 .flex_fieldset1 {
+    border-top: none;
     border-bottom: 2px solid black;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
 
 .flex_fieldset2 {
     padding-top: 1rem;
     padding-bottom: 0rem;
+    margin-top: 2rem;
+    border-top: none;
+    border-bottom: none;
 }
 
 #name, #email, #phone, #address, #city, #state, #zip {
     background-color: rgb(231, 230, 230);
-    line-height: 2rem;
     border: none;
     border-radius: 4px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: .3rem;
+    margin-bottom: 1.25rem;
 }
 
 #topic {
@@ -75,10 +85,32 @@ legend {
     line-height: 3rem;
     border: none;
     border-radius: 4px;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 #zip {
     width: 50%;
+}
+
+#html_newsletter, #html_format {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+#css_newsletter {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+#plain_text_format {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+#javascript_newsletter {
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
 }
 
 .flex_fieldset1 input {
@@ -93,13 +125,25 @@ legend {
     margin-bottom: .25rem;
 }
 
-/*label[class="newsletter_label"] {
-    margin-bottom: 1rem;
-}*/
+[placeholder="Required"] {
+    text-align: right;
+    padding-right: 1rem;
+    font-style: italic;
+}
 
-.signup_button {
+[type="checkbox"] {
+    margin-right: .6rem;
+}
+
+[type="radio"] {
+    margin-right: .6rem;
+}
+
+button {
     background-color: rgb(0, 166, 255);
     cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
     border-radius: 5px;
     margin-top: 1.5rem;
     margin-left: 0rem;
@@ -107,18 +151,29 @@ legend {
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: white;
+    width: 100%;
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1.5rem;
+    padding-top: 1rem;
 }
 
 
 
 /*------FlexBox------*/ 
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 
+.newsletter_signup, .form_container {
+    display: flex;
+    flex-direction: column;
+}
 
 .flex_fieldset1 {
     display: flex;
@@ -127,15 +182,15 @@ footer {
 
 .signup_button, .footer_class {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
 /*------Media Queries------*/
 
+
+
 @media (min-width: 768px) {
-    .main_container {
-        display: flex;
-        justify-content: center;
-    }
+
 }
