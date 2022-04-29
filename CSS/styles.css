@@ -17,13 +17,8 @@ h1 {
     text-align: center;
 }
 
-body {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 300;
-}
-
-div {
-    max-width: 600px;
+.newsletter_signup h2 {
+    margin-bottom: 0;
 }
 
 .newsletter_signup {
@@ -33,6 +28,15 @@ div {
     margin: 0 1rem;
     text-align: center;
     border-bottom: 4px solid black;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+
+div {
+    max-width: 500px;
 }
 
 .form_container {
@@ -46,45 +50,47 @@ legend {
     font-size: 1.5rem;
 }
 
-
-.flex_fieldset1, .flex_fieldset2 {
-    padding-left: 0;
+.flex_fieldset1, 
+.flex_fieldset2 {
+    padding-top: 1rem;
     padding-right: 0;
+    padding-left: 0;
+    border-top: none;
     border-left: none;
     border-right: none;
 }
 
 .flex_fieldset1 {
-    border-top: none;
-    border-bottom: 2px solid black;
-    padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    border-bottom: 2px solid black;
 }
 
 .flex_fieldset2 {
-    padding-top: 1rem;
     padding-bottom: 0rem;
     margin-top: 2rem;
-    border-top: none;
     border-bottom: none;
 }
 
-#name, #email, #phone, #address, #city, #state, #zip {
+.flex_fieldset1 label {
+    margin-bottom: .25rem;
+}
+
+.flex_fieldset1 input, 
+select {
     background-color: rgb(231, 230, 230);
     border: none;
     border-radius: 4px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    height: 3rem;
     margin-top: .3rem;
     margin-bottom: 1.25rem;
 }
 
 #topic {
     background-color: rgb(231, 230, 230);
-    line-height: 3rem;
     border: none;
     border-radius: 4px;
+    height: 6rem;
     width: 100%;
     margin-top: 1rem;
 }
@@ -93,7 +99,8 @@ legend {
     width: 50%;
 }
 
-#html_newsletter, #html_format {
+#html_newsletter, 
+#html_format {
     margin-top: 1rem;
     margin-bottom: .5rem;
 }
@@ -111,18 +118,6 @@ legend {
 #javascript_newsletter {
     margin-top: .5rem;
     margin-bottom: 1.5rem;
-}
-
-.flex_fieldset1 input {
-    margin-bottom: .75rem;
-}
-
-.flex_fieldset1 select {
-    margin-bottom: .75rem;
-}
-
-.flex_fieldset1 label {
-    margin-bottom: .25rem;
 }
 
 [placeholder="Required"] {
@@ -170,7 +165,8 @@ footer {
     margin: auto;
 }
 
-.newsletter_signup, .form_container {
+.newsletter_signup, 
+.form_container {
     display: flex;
     flex-direction: column;
 }
@@ -180,7 +176,8 @@ footer {
     flex-direction: column;
 }
 
-.signup_button, .footer_class {
+.signup_button, 
+.footer_class {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -192,5 +189,50 @@ footer {
 
 
 @media (min-width: 768px) {
+    h1 {
+        font-size: 1.2rem;
+    }
 
+    .newsletter_signup {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .newsletter_signup h2 {
+        margin-bottom: .3rem;
+    }
+
+    .newsletter_signup p {
+        margin-top: 0;
+    }
+
+    legend {
+        font-size: 1.3rem;
+    }
+
+    .flex_fieldset1 {
+        margin-top: .5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex_fieldset1 label {
+        flex-basis: 20%;
+        margin-right: 5%;
+        align-self: center;
+        padding-top: 1.2rem;
+    }
+
+    .flex_fieldset1 input, 
+    select {
+        flex-basis: 75%;
+        margin-top: 1.2rem;
+        margin-bottom: 0;
+    }
+
+    #zip {
+        flex-basis: 25%;
+        margin-bottom: 1rem;
+    }
 }
