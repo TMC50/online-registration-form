@@ -50,6 +50,26 @@ legend {
     font-size: 1.5rem;
 }
 
+input[type="text"]:focus {
+    background-color: lightblue;
+} 
+
+input[type="email"]:focus {
+    background-color: lightblue;
+}
+
+input[type="tel"]:focus {
+    background-color: lightblue;
+}
+
+select:focus {
+    background-color: lightblue;
+} 
+
+#topic:focus {
+    background-color: lightblue;
+} 
+
 .flex_fieldset1, 
 .flex_fieldset2 {
     padding-top: 1rem;
